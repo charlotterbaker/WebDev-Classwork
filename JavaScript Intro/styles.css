@@ -1,0 +1,81 @@
+/*Charlotte Baker CSCE 242*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: orchid;
+}
+
+header {
+    text-align: center;
+    background-color: blue;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.column {
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    flex: 1;
+    min-width: 280px;
+}
+
+.column h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
+.column button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: plum;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.column input[type="text"],
+.column input[type="number"],
+.column textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+#commentContainer {
+    margin-top: 10px;
+}
+
+.comment-box {
+    border: 1px solid lightblue;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+#animationBox {
+    text-align: center;
+    font-size: 50px; 
+    transform: scale(1);
+    transition: transform 1s ease-in-out;
+}
+
+#animationBox.animate {
+    transform: scale(1.2);
+}

@@ -1,0 +1,136 @@
+/* Charlotte Baker */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 120px; 
+}
+
+header {
+    background-color: greenyellow;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+    list-style: none;
+    background-color: hotpink;
+    justify-content: space-evenly;
+    padding: 10px; 
+}
+
+nav li {
+    margin: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px; 
+}
+
+.main-content {
+    flex: 2;
+    background-color: #fff;
+    padding: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px; 
+}
+
+.sidebar {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px; 
+}
+
+.columns {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  
+}
+
+.column {
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: lavender;
+    padding: 20px;
+    margin-bottom: 20px; 
+    text-align: center; 
+    color: #333; 
+}
+
+
+.nested {
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    padding: 20px;
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    margin-bottom: 20px; 
+}
+
+.image-container img {
+    max-width: 320px;
+    height: 100px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+.footer-title {
+    text-align: center;
+}
+
+.footer-address {
+    text-align: right;
+}
+@media screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .columns {
+        flex-direction: column;
+    }
+
+    .image-container {
+        flex-direction: column;
+    }
+}

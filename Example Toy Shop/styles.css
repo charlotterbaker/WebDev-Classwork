@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: lightskyblue;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background-color: orchid;
+    color: white;
+    padding: 10px;
+}
+
+.toy-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.toy {
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    border: 8px solid lightgray;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.toy:hover {
+    opacity: 50%;
+}
+
+.toy img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.toy .toy-info {
+    background: none;
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.toy:hover .toy-info {
+    opacity: 1;
+}
+
